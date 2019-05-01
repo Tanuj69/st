@@ -1,10 +1,7 @@
-# Luke's build of st - the simple (suckless) terminal
+# Gruvbox suckless terminal build with scroll
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features:
 
-+ Compatibility with `Xresources` and `pywal` for dynamic colors. The `Xdefaults` file shows a usage example.
-+ Default [gruvbox](https://github.com/morhetz/gruvbox) colors otherwise.
-+ Transparency/alpha, which is also adjustable from `~/.Xresources`.
 + Default font is system "mono" at 16pt, meaning the font will match your system font.
 + Very useful keybinds including:
 	+ Copy is alt-c, paste is alt-v or alt-p pastes from primary selection
@@ -17,17 +14,8 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 	+ Alt-PageUp and Alt-PageDown will do the same.
 + Vertcenter
 + Scrollback
-+ updated to latest version 0.8.1
-
-The following additional bindings were added before I forked this:
-
-+ Scroll through history -- Shift+PageUp/PageDown or Shift+Mouse wheel
-+ Increase/decrease font size -- Shift+Alt+PageUp/PageDown
-+ Return to default font size -- Alt+Home
-+ Paste -- Shift+Insert
 
 ## Installation for newbs
-
 ```
 make
 sudo make install
@@ -51,21 +39,3 @@ For example, you can define your desired fonts, transparency or colors:
 *.color0: #111
 ...
 ```
-
-The `alpha` value (for transparency) goes from `0` (transparent) to `255`
-(opaque).
-
-### Colors
-
-To be clear about the color settings:
-
-- This build will use gruvbox colors by default and as a fallback.
-- If there are Xresources colors defined, those will take priority.
-- But if `wal` has run in your session, its colors will take priority.
-
-Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
