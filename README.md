@@ -1,4 +1,4 @@
-# Gruvbox suckless terminal build with scroll
+# Dracula themed suckless terminal build with scroll
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
@@ -40,7 +40,7 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 To be clear about the color settings:
 
-- This build will use gruvbox colors by default and as a fallback.
+- This build will use Dracula colors by default and as a fallback.
 - If there are Xresources colors defined, those will take priority.
 - But if `wal` has run in your session, its colors will take priority.
 
